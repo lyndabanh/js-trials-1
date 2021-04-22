@@ -78,6 +78,7 @@ function getRange(start, stop) {
   for (let num = start; num < stop; num += 1) {
     nums.push(num);
   }
+  return nums;
 }
 
 // Given a string, return a string where vowels are replaced with '*'.
@@ -95,7 +96,7 @@ function censorVowels(word) {
       chars.push(letter);
     }
   }
-
+  console.log('test')
   return chars.join('');
 }
 
@@ -110,7 +111,7 @@ function snakeToCamel(string) {
   for (const word of string.split('_')) {
     camelCase.push(`${word[0].toUpperCase()}${word.slice(1)}`);
   }
-
+  
   return camelCase.join('');
 }
 
